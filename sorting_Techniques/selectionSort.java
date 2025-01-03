@@ -3,11 +3,11 @@ import java.util.Arrays;
 public class selectionSort {
     public static void main(String[] args) {
         int[] arr = { 4, 1, 3, 9, 7};
-        selectionSort(arr);
+        sort(arr);
         System.out.print(Arrays.toString(arr));
     }
 
-    static void selectionSort(int[] arr) {
+    static void sort(int[] arr) {
         // code here
         for(int i = 0 ; i < arr.length-1 ; i++){
             //find max element in the array
