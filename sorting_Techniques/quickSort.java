@@ -11,9 +11,9 @@ public class quickSort {
         if(low >= high){
             return;
         }
-        int pivotIndex = partition(nums, low, high);
-        sort(nums, low, pivotIndex-1);
-        sort(nums, pivotIndex+1, high);
+        int pIndex = partition(nums, low, high);
+        sort(nums, low, pIndex-1);
+        sort(nums, pIndex+1, high);
     }
 
     static int partition(int[] nums, int low, int high){
